@@ -406,6 +406,88 @@ class MoviesPage extends StatelessWidget {
                 ],
               ),
             ),
+            SizedBox(
+              height: 20,
+            ),
+            Row(children: [
+              SizedBox(
+                width: 27,
+              ),
+              Container(
+                alignment: Alignment.bottomCenter,
+                height: 160.0,
+                width: 130.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  image: DecorationImage(
+                    image: AssetImage('assets/images/movie6.jpg'),
+                    fit: BoxFit.fill,
+                  ),
+                  boxShadow: [
+                    //background color of box
+                    BoxShadow(
+                      color: Colors.black,
+                      blurRadius: 3.0, // soften the shadow
+                      spreadRadius: 2.0, //extend the shadow
+                      offset: Offset(
+                        3.0, // Move to right 10  horizontally
+                        3.0, // Move to bottom 10 Vertically
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(width: 20),
+              Container(
+                alignment: Alignment.bottomCenter,
+                height: 160.0,
+                width: 130.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  image: DecorationImage(
+                    image: AssetImage('assets/images/movie5.jpg'),
+                    fit: BoxFit.fill,
+                  ),
+                  boxShadow: [
+                    //background color of box
+                    BoxShadow(
+                      color: Colors.black,
+                      blurRadius: 3.0, // soften the shadow
+                      spreadRadius: 2.0, //extend the shadow
+                      offset: Offset(
+                        3.0, // Move to right 10  horizontally
+                        3.0, // Move to bottom 10 Vertically
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(width: 20),
+              Container(
+                alignment: Alignment.bottomCenter,
+                height: 160.0,
+                width: 130.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  image: DecorationImage(
+                    image: AssetImage('assets/images/movie2.jpg'),
+                    fit: BoxFit.fill,
+                  ),
+                  boxShadow: [
+                    //background color of box
+                    BoxShadow(
+                      color: Colors.black,
+                      blurRadius: 3.0, // soften the shadow
+                      spreadRadius: 2.0, //extend the shadow
+                      offset: Offset(
+                        3.0, // Move to right 10  horizontally
+                        3.0, // Move to bottom 10 Vertically
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ]),
           ],
         ),
       ),
