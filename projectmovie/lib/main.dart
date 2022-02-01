@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 shape: BoxShape.circle,
                 image: DecorationImage(
                     fit: BoxFit.contain,
-                    image: AssetImage('assets/movie.png'))),
+                    image: AssetImage('assets/images/movie.png'))),
           ),
           SizedBox(
             width: 15.0,
