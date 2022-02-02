@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 class MoviesPage extends StatelessWidget {
@@ -26,18 +24,18 @@ class MoviesPage extends StatelessWidget {
                           color: Colors.white,
                           fontFamily: 'Light',
                           fontWeight: FontWeight.bold,
-                          fontSize: 22,
+                          fontSize: 25,
                         ),
                       ),
                       SizedBox(
-                        height: 8,
+                        height: 5,
                       ),
                       Text(
                         'Discover all of the movies',
                         style: TextStyle(
                           color: Colors.white,
                           fontFamily: 'Light',
-                          fontSize: 10,
+                          fontSize: 13,
                         ),
                       ),
                     ],
@@ -46,10 +44,7 @@ class MoviesPage extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 20,
-            ),
-            SizedBox(
-              width: 26,
+              height: 15,
             ),
             Column(
               children: [
@@ -58,12 +53,12 @@ class MoviesPage extends StatelessWidget {
                   textBaseline: TextBaseline.alphabetic,
                   children: <Widget>[
                     SizedBox(
-                      height: 10,
+                      width: 20,
                     ),
                     Container(
                       alignment: Alignment.bottomCenter,
-                      height: 300.0,
-                      width: 200.0,
+                      height: 240.0,
+                      width: 170.0,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         image: DecorationImage(
@@ -84,11 +79,14 @@ class MoviesPage extends StatelessWidget {
                         ],
                       ),
                     ),
-                    SizedBox(width: 50),
+                    SizedBox(width: 25),
+                    SizedBox(
+                      height: 10,
+                    ),
                     Container(
                       alignment: Alignment.bottomCenter,
-                      height: 300.0,
-                      width: 200.0,
+                      height: 240.0,
+                      width: 170.0,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         image: DecorationImage(
@@ -137,9 +135,9 @@ class MoviesPage extends StatelessWidget {
                     fontSize: 10,
                   ),
                 ),
-                SizedBox(width: 150),
+                SizedBox(width: 140),
                 Text(
-                  " SPIDER-MEN: NO WAY HOME",
+                  " DUNE",
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
@@ -171,7 +169,7 @@ class MoviesPage extends StatelessWidget {
                     style: TextStyle(
                       color: Colors.white,
                     )),
-                SizedBox(width: 160),
+                SizedBox(width: 95),
                 Icon(
                   Icons.star,
                   size: 15,
@@ -208,24 +206,40 @@ class MoviesPage extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        'Coming Soon',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'Light',
-                          fontWeight: FontWeight.bold,
-                          fontSize: 22,
-                        ),
+                      Row(
+                        children: [
+                          Text(
+                            'Coming Soon',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: 'Light',
+                              fontWeight: FontWeight.bold,
+                              fontSize: 23,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 160,
+                          ),
+                          Text(
+                            'View all',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: 'Light',
+                              fontWeight: FontWeight.bold,
+                              fontSize: 11,
+                            ),
+                          ),
+                        ],
                       ),
                       SizedBox(
-                        height: 10,
+                        height: 15,
                       ),
                       Row(
                         children: [
                           Container(
                             alignment: Alignment.bottomCenter,
-                            height: 160.0,
-                            width: 130.0,
+                            height: 155.0,
+                            width: 110.0,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
                               image: DecorationImage(
@@ -246,11 +260,11 @@ class MoviesPage extends StatelessWidget {
                               ],
                             ),
                           ),
-                          SizedBox(width: 20),
+                          SizedBox(width: 7),
                           Container(
                             alignment: Alignment.bottomCenter,
-                            height: 160.0,
-                            width: 130.0,
+                            height: 155.0,
+                            width: 110.0,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
                               image: DecorationImage(
@@ -271,11 +285,11 @@ class MoviesPage extends StatelessWidget {
                               ],
                             ),
                           ),
-                          SizedBox(width: 20),
+                          SizedBox(width: 7),
                           Container(
                             alignment: Alignment.bottomCenter,
-                            height: 160.0,
-                            width: 130.0,
+                            height: 155.0,
+                            width: 110.0,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
                               image: DecorationImage(
@@ -298,11 +312,11 @@ class MoviesPage extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(height: 20),
+                      SizedBox(height: 12),
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          SizedBox(width: 30),
+                          SizedBox(width: 15),
                           Text(
                             " MY HERO ACADEMIA",
                             style: TextStyle(
@@ -312,7 +326,7 @@ class MoviesPage extends StatelessWidget {
                               fontSize: 10,
                             ),
                           ),
-                          SizedBox(width: 55),
+                          SizedBox(width: 38),
                           Text(
                             " QUITE PLACE",
                             style: TextStyle(
@@ -322,7 +336,7 @@ class MoviesPage extends StatelessWidget {
                               fontSize: 10,
                             ),
                           ),
-                          SizedBox(width: 100),
+                          SizedBox(width: 60),
                           Text(
                             " POP-EYE",
                             style: TextStyle(
@@ -334,9 +348,10 @@ class MoviesPage extends StatelessWidget {
                           ),
                         ],
                       ),
+                      SizedBox(height: 5),
                       Row(
                         children: <Widget>[
-                          SizedBox(width: 50),
+                          SizedBox(width: 20),
                           Icon(
                             Icons.star,
                             size: 15,
@@ -357,7 +372,7 @@ class MoviesPage extends StatelessWidget {
                                 fontSize: 8,
                                 color: Colors.white,
                               )),
-                          SizedBox(width: 50),
+                          SizedBox(width: 35),
                           Icon(
                             Icons.star,
                             size: 15,
@@ -378,7 +393,7 @@ class MoviesPage extends StatelessWidget {
                                 fontSize: 8,
                                 color: Colors.white,
                               )),
-                          SizedBox(width: 70),
+                          SizedBox(width: 40),
                           Icon(
                             Icons.star,
                             size: 15,
@@ -406,88 +421,6 @@ class MoviesPage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
-              height: 20,
-            ),
-            Row(children: [
-              SizedBox(
-                width: 27,
-              ),
-              Container(
-                alignment: Alignment.bottomCenter,
-                height: 160.0,
-                width: 130.0,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  image: DecorationImage(
-                    image: AssetImage('assets/images/movie6.jpg'),
-                    fit: BoxFit.fill,
-                  ),
-                  boxShadow: [
-                    //background color of box
-                    BoxShadow(
-                      color: Colors.black,
-                      blurRadius: 3.0, // soften the shadow
-                      spreadRadius: 2.0, //extend the shadow
-                      offset: Offset(
-                        3.0, // Move to right 10  horizontally
-                        3.0, // Move to bottom 10 Vertically
-                      ),
-                    )
-                  ],
-                ),
-              ),
-              SizedBox(width: 20),
-              Container(
-                alignment: Alignment.bottomCenter,
-                height: 160.0,
-                width: 130.0,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  image: DecorationImage(
-                    image: AssetImage('assets/images/movie5.jpg'),
-                    fit: BoxFit.fill,
-                  ),
-                  boxShadow: [
-                    //background color of box
-                    BoxShadow(
-                      color: Colors.black,
-                      blurRadius: 3.0, // soften the shadow
-                      spreadRadius: 2.0, //extend the shadow
-                      offset: Offset(
-                        3.0, // Move to right 10  horizontally
-                        3.0, // Move to bottom 10 Vertically
-                      ),
-                    )
-                  ],
-                ),
-              ),
-              SizedBox(width: 20),
-              Container(
-                alignment: Alignment.bottomCenter,
-                height: 160.0,
-                width: 130.0,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  image: DecorationImage(
-                    image: AssetImage('assets/images/movie2.jpg'),
-                    fit: BoxFit.fill,
-                  ),
-                  boxShadow: [
-                    //background color of box
-                    BoxShadow(
-                      color: Colors.black,
-                      blurRadius: 3.0, // soften the shadow
-                      spreadRadius: 2.0, //extend the shadow
-                      offset: Offset(
-                        3.0, // Move to right 10  horizontally
-                        3.0, // Move to bottom 10 Vertically
-                      ),
-                    )
-                  ],
-                ),
-              ),
-            ]),
           ],
         ),
       ),
