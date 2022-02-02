@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:projectmovie/components/pay_button.dart';
 import 'package:projectmovie/components/seat_selector.dart';
-import 'package:projectmovie/components/time_selector.dart';
+
 
 import 'components/date_selector.dart';
 import 'components/location.dart';
+import 'components/time_selector.dart';
 
 class SelectionPage extends StatefulWidget {
   const SelectionPage({Key? key}) : super(key: key);
@@ -24,7 +25,7 @@ class _SelectionPageState extends State<SelectionPage> {
             children: [
               DateSelector(),
               TimeSelector(),
-              LocationText(),
+     
               SeatSelector(),
               PayButton(),
             ],

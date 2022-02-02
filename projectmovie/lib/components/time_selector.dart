@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'Cons.dart';
 
@@ -8,12 +10,14 @@ class TimeSelector extends StatefulWidget {
 }
 
 class _TimeSelectorState extends State<TimeSelector> {
-  int timeIntexSelected = 1;
+  int timeIntexSelected = 0;
 
   var time = [
-    ["01.30", 5],
-    ["06.30", 10],
-    ["10.30", 15]
+    ["11.30", 5],
+    ["12.30", 10],
+    ["15.30", 15],
+    ["16.30", 20],
+    ["18.30", 25],
   ];
 
 
@@ -23,7 +27,7 @@ class _TimeSelectorState extends State<TimeSelector> {
 
     return Container(
       
-      margin: EdgeInsets.symmetric(horizontal: 12),
+      margin: EdgeInsets.symmetric(horizontal: 6),
       padding: EdgeInsets.symmetric(horizontal: appPadding * 0.75),
       decoration: BoxDecoration(
           border: Border.all(
@@ -44,26 +48,10 @@ class _TimeSelectorState extends State<TimeSelector> {
                   fontWeight: FontWeight.w600,
                   color: active ? primary : white,
                 ),
-                children: <TextSpan>[
-                  TextSpan(
-                    text: ' PM',
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w600,
-                      color: active ? primary : white,
-                    )
-                  )
-                ]
+                
               )
           ),
-          Text(
-            "from \$$price",
-            style: TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.w600,
-              color: grey,
-            ),
-          )
+        
         ],
       ),
     );
@@ -76,13 +64,14 @@ class _TimeSelectorState extends State<TimeSelector> {
     return Expanded(
       flex: 17,
       child: Container(
-        margin: EdgeInsets.symmetric(vertical: size.height * 0.035),
+         width: size.width,
+        margin: EdgeInsets.symmetric(vertical: size.height * 0.05),
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
-          itemCount: 3,
+          itemCount: time.length,
           itemBuilder: (context, index) {
             return Container(
-              margin: EdgeInsets.only(left: index == 0 ? 32 : 0),
+              margin: EdgeInsets.only(left: index == 0 ? 16 : 0,),
               child: GestureDetector(
                 onTap: () {
                   setState(() {
