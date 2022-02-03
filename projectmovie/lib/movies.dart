@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projectmovie/movie_screens/home_screen.dart';
 
 class MoviesPage extends StatelessWidget {
   @override
@@ -218,16 +219,27 @@ class MoviesPage extends StatelessWidget {
                             ),
                           ),
                           SizedBox(
-                            width: 160,
+                            width: 120,
                           ),
-                          Text(
-                            'View all',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontFamily: 'Light',
-                              fontWeight: FontWeight.bold,
-                              fontSize: 11,
+                          RaisedButton(
+                            textColor: Colors.white,
+                            color: Colors.grey[700],
+                            child: Text(
+                              'View all',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: 'Light',
+                                fontWeight: FontWeight.bold,
+                                fontSize: 14,
+                              ),
                             ),
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => HomeScreen(title: '',)),
+                              );
+                            },
                           ),
                         ],
                       ),
