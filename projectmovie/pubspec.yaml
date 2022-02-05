@@ -80,6 +80,12 @@ flutter:
     - assets/movieLists/quietPlaceLogo.png
     - assets/movieLists/spiderManLogo.png
     - assets/movieLists/thunderForceLogo.png
+
+    - SpiderManDetails/spidermanbg.jpg
+    - SpiderManDetails/BenedictCumberbatch.jpg
+    - SpiderManDetails/JacobBatalon.jpg
+    - SpiderManDetails/tomholland.jpg
+    - SpiderManDetails/zendaya.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
