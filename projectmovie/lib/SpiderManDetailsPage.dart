@@ -54,3 +54,67 @@ class _SpiderManDetailState extends State<SpiderManDetail> {
               ),
             ],
           ),
+                    child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: new Column(
+              children: [
+                new Container(
+                  child: new Text(
+                    'Spiderman no way home',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        // fontFamily: 'Aleo',
+                        // fontStyle: FontStyle.normal,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25.0,
+                        color: Colors.black),
+                  ),
+                ),
+                new Container(
+                  child: Row(
+                    children: [
+                      SizedBox(width: 150),
+                      new Text(
+                        '9.5',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            // fontFamily: 'Aleo',
+                            // fontStyle: FontStyle.normal,
+                            // fontWeight: FontWeight.bold,
+                            fontSize: 12.0,
+                            color: Colors.black),
+                      ),
+                      new Container(
+                        child: SmoothStarRating(
+                        rating: rating,
+                        isReadOnly: true,
+                        size: 20,
+                        color: Colors.yellow,
+                        borderColor: Colors.yellow,
+                        filledIconData: Icons.star,
+                        halfFilledIconData: Icons.star_half,
+                        defaultIconData: Icons.star_border,
+                        starCount: 5,
+                        allowHalfRating: true,
+                        spacing: 2.0,
+                        // onRated: (value) {
+                        //   print("rating value -> $value");
+                        //   // print("rating value dd -> ${value.truncate()}");
+                        // },
+                      )),
+                    ],
+                  ),
+                ),
+                new Container(
+                  child: new Text(
+                    'Directed by Jon Watts.',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        // fontFamily: 'Aleo',
+                        // fontStyle: FontStyle.normal,
+                        // fontWeight: FontWeight.,
+                        fontSize: 12.0,
+                        color: Colors.black),
+                  ),
+                ),
+                
