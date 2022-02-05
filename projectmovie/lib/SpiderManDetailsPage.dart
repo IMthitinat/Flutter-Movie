@@ -10,6 +10,7 @@ class SpiderManDetail extends StatefulWidget {
   @override
   State<SpiderManDetail> createState() => _SpiderManDetailState();
 }
+
 class _SpiderManDetailState extends State<SpiderManDetail> {
   var rating = 4.5;
   @override
@@ -37,7 +38,7 @@ class _SpiderManDetailState extends State<SpiderManDetail> {
                 onPressed: () {},
               ),
             ]),
-                    body: new Container(
+        body: new Container(
           alignment: Alignment.bottomCenter,
           margin: EdgeInsets.all(20),
           height: 350,
@@ -54,7 +55,7 @@ class _SpiderManDetailState extends State<SpiderManDetail> {
               ),
             ],
           ),
-                    child: Padding(
+          child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: new Column(
               children: [
@@ -117,4 +118,151 @@ class _SpiderManDetailState extends State<SpiderManDetail> {
                         color: Colors.black),
                   ),
                 ),
-                
+                Row(children: [
+                  SizedBox(width: 40),
+                  new Text(
+                    'Actor',
+                    textAlign: TextAlign.start,
+                    style: TextStyle(
+                        // fontFamily: 'Aleo',
+                        // fontStyle: FontStyle.normal,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18.0,
+                        color: Colors.black),
+                  ),
+                ]),
+                Row(
+                  children: [
+                    SizedBox(width: 40),
+                    new Container(
+                      height: 80.0,
+                      width: 80.0,
+                      decoration: new BoxDecoration(
+                        image: DecorationImage(
+                            image: new AssetImage('assets/SpiderManDetails/tomholland.jpg'),
+                            fit: BoxFit.fill),
+
+                        // shape: BoxShape.circle
+                      ),
+                    ),
+                    SizedBox(width: 20),
+                    new Container(
+                      height: 80.0,
+                      width: 80.0,
+                      decoration: new BoxDecoration(
+                        image: DecorationImage(
+                            image: new AssetImage('assets/SpiderManDetails/zendaya.jpg'),
+                            fit: BoxFit.fill),
+
+                        // shape: BoxShape.circle
+                      ),
+                    ),
+                    SizedBox(width: 20),
+                    new Container(
+                      height: 80.0,
+                      width: 80.0,
+                      decoration: new BoxDecoration(
+                        image: DecorationImage(
+                            image: new AssetImage(
+                                'assets/SpiderManDetails/BenedictCumberbatch.jpg'),
+                            fit: BoxFit.fill),
+
+                        // shape: BoxShape.circle
+                      ),
+                    ),
+                    SizedBox(width: 20),
+                    new Container(
+                      height: 80.0,
+                      width: 80.0,
+                      decoration: new BoxDecoration(
+                        image: DecorationImage(
+                            image: new AssetImage('assets/SpiderManDetails/JacobBatalon.jpg'),
+                            fit: BoxFit.fill),
+
+                        // shape: BoxShape.circle
+                      ),
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    SizedBox(
+                      width: 40,
+                    ),
+                    new Container(
+                      child: new Text(
+                        'Tom Holland',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            // fontFamily: 'Aleo',
+                            // fontStyle: FontStyle.normal,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12.0,
+                            color: Colors.black),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 45,
+                    ),
+                    new Container(
+                      child: new Text(
+                        'Zendaya',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            // fontFamily: 'Aleo',
+                            // fontStyle: FontStyle.normal,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12.0,
+                            color: Colors.black),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    new Container(
+                      child: new Text(
+                        'Benedict Cumberbatch',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            // fontFamily: 'Aleo',
+                            // fontStyle: FontStyle.normal,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12.0,
+                            color: Colors.black),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 5,
+                    ),
+                    new Container(
+                      child: new Text(
+                        'Jacob Batalon',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            // fontFamily: 'Aleo',
+                            // fontStyle: FontStyle.normal,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12.0,
+                            color: Colors.black),
+                      ),
+                    ),
+                    SizedBox(width: 20),
+                  ],
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: new Container(
+                    child: Text(
+                      "Continuing the story from the events of the prequel, Peter Parker and the people around him are in dire straits as Mysterio leaves behind a large set of bombs. by revealing his true identity Causing him to go to Doctor Strange to help fix what's going on. hoping to erase the memories of the whole world To forget who Spider-Man is, but the unexpected happens during the spell. because he distracted the doctor It turned out that the outcome was more disastrous. Because it is the birth of a multiverse, or multiple universes, parallel worlds. which caused him to face old situations and villains.who had fought together And it makes things worse and too dangerous to deal with on your own.",
+                      style: TextStyle(fontSize: 10),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
