@@ -37,3 +37,20 @@ class _SpiderManDetailState extends State<SpiderManDetail> {
                 onPressed: () {},
               ),
             ]),
+                    body: new Container(
+          alignment: Alignment.bottomCenter,
+          margin: EdgeInsets.all(20),
+          height: 350,
+          width: double.infinity,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(30),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withOpacity(0.5),
+                spreadRadius: 5,
+                blurRadius: 7,
+                offset: Offset(0, 2),
+              ),
+            ],
+          ),
