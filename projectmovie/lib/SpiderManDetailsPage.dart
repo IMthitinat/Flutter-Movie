@@ -10,3 +10,30 @@ class SpiderManDetail extends StatefulWidget {
   @override
   State<SpiderManDetail> createState() => _SpiderManDetailState();
 }
+class _SpiderManDetailState extends State<SpiderManDetail> {
+  var rating = 4.5;
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+          image: DecorationImage(
+              fit: BoxFit.cover, image: AssetImage("assets/SpiderManDetails/spidermanbg.jpg"))),
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
+        appBar: AppBar(
+            backgroundColor: Colors.transparent,
+            elevation: 0.0,
+            leading: IconButton(
+              icon: Icon(Icons.arrow_back_ios_new),
+              onPressed: () {},
+            ),
+            actions: <Widget>[
+              IconButton(
+                icon: const Icon(Icons.search),
+                onPressed: () {},
+              ),
+              IconButton(
+                icon: const Icon(Icons.person_pin),
+                onPressed: () {},
+              ),
+            ]),
