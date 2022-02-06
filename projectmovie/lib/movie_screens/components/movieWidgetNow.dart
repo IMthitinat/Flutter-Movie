@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projectmovie/SpiderManDetailsPage.dart';
 import 'package:projectmovie/movie_data/movie_data.dart';
 import 'package:projectmovie/movie_inner_widget/movie_inner_widget.dart';
 import 'package:projectmovie/selectionPage.dart';
@@ -108,11 +109,11 @@ class _MovieWidgetNowState extends State<MovieWidgetNow> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => const SelectionPage()),
+                      builder: (context) => const SpiderManDetail()),
                 );
               },
               child: Text(
-                'Buy ticket',
+                'DETAIL',
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
@@ -120,6 +121,8 @@ class _MovieWidgetNowState extends State<MovieWidgetNow> {
               ),
             )),
           ),
+          
+              
           SizedBox(
             height: size.height * 0.01,
           ),

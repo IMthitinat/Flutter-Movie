@@ -1,12 +1,11 @@
 // ignore_for_file: prefer_const_constructors, unnecessary_new
 
 import 'package:flutter/material.dart';
-import 'package:smooth_star_rating/smooth_star_rating.dart';
+import 'package:projectmovie/selectionPage.dart';
 
 class SpiderManDetail extends StatefulWidget {
-  const SpiderManDetail({Key? key, required this.title}) : super(key: key);
+  const SpiderManDetail({Key? key, }) : super(key: key);
 
-  final String title;
   @override
   State<SpiderManDetail> createState() => _SpiderManDetailState();
 }
@@ -18,7 +17,7 @@ class _SpiderManDetailState extends State<SpiderManDetail> {
     return Container(
       decoration: BoxDecoration(
           image: DecorationImage(
-              fit: BoxFit.cover, image: AssetImage("assets/SpiderManDetails/spidermanbg.jpg"))),
+              fit: BoxFit.cover, image: AssetImage("assets/SpiderManDetails/spiderbg.jpg"))),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(
@@ -41,7 +40,7 @@ class _SpiderManDetailState extends State<SpiderManDetail> {
         body: new Container(
           alignment: Alignment.bottomCenter,
           margin: EdgeInsets.all(20),
-          height: 350,
+          height: 400,
           width: double.infinity,
           decoration: BoxDecoration(
             color: Colors.white,
@@ -85,24 +84,24 @@ class _SpiderManDetailState extends State<SpiderManDetail> {
                             fontSize: 12.0,
                             color: Colors.black),
                       ),
-                      new Container(
-                        child: SmoothStarRating(
-                        rating: rating,
-                        isReadOnly: true,
-                        size: 20,
-                        color: Colors.yellow,
-                        borderColor: Colors.yellow,
-                        filledIconData: Icons.star,
-                        halfFilledIconData: Icons.star_half,
-                        defaultIconData: Icons.star_border,
-                        starCount: 5,
-                        allowHalfRating: true,
-                        spacing: 2.0,
-                        // onRated: (value) {
-                        //   print("rating value -> $value");
-                        //   // print("rating value dd -> ${value.truncate()}");
-                        // },
-                      )),
+                      // new Container(
+                      //   child: SmoothStarRating(
+                      //   rating: rating,
+                      //   isReadOnly: true,
+                      //   size: 20,
+                      //   color: Colors.yellow,
+                      //   borderColor: Colors.yellow,
+                      //   filledIconData: Icons.star,
+                      //   halfFilledIconData: Icons.star_half,
+                      //   defaultIconData: Icons.star_border,
+                      //   starCount: 5,
+                      //   allowHalfRating: true,
+                      //   spacing: 2.0,
+                      //   // onRated: (value) {
+                      //   //   print("rating value -> $value");
+                      //   //   // print("rating value dd -> ${value.truncate()}");
+                      //   // },
+                      // )),
                     ],
                   ),
                 ),
@@ -258,6 +257,29 @@ class _SpiderManDetailState extends State<SpiderManDetail> {
                     ),
                   ),
                 ),
+                Container(
+            width: 156,
+            height: 48,
+            decoration: BoxDecoration(
+                color: Colors.red, borderRadius: BorderRadius.circular(10.0)),
+            child: Center(
+                child: TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const SelectionPage()),
+                );
+              },
+              child: Text(
+                'BUY TICKET',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            )),
+          ),
               ],
             ),
           ),

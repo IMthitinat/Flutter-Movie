@@ -81,11 +81,11 @@ flutter:
     - assets/movieLists/spiderManLogo.png
     - assets/movieLists/thunderForceLogo.png
 
-    - SpiderManDetails/spidermanbg.jpg
-    - SpiderManDetails/BenedictCumberbatch.jpg
-    - SpiderManDetails/JacobBatalon.jpg
-    - SpiderManDetails/tomholland.jpg
-    - SpiderManDetails/zendaya.jpg
+    - assets/SpiderManDetails/spiderbg.jpg
+    - assets/SpiderManDetails/BenedictCumberbatch.jpg
+    - assets/SpiderManDetails/JacobBatalon.jpg
+    - assets/SpiderManDetails/tomholland.jpg
+    - assets/SpiderManDetails/zendaya.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
