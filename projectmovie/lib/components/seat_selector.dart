@@ -17,33 +17,36 @@ class _SeatSelectorState extends State<SeatSelector> {
     // 3 is reserved seats
 
     var _chairStatus = [
-      [1, 1, 1, 1, 1, 1, 1],
-      [1, 1, 1, 1, 3, 1, 1],
-      [1, 1, 1, 1, 1, 3, 3],
-      [2, 2, 2, 1, 3, 1, 1],
-      [1, 1, 1, 1, 1, 1, 1],
-      [1, 1, 1, 1, 1, 1, 1],
+      [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+      [1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 1],
+      [1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 3],
+      [2, 2, 2, 1, 1, 1, 1, 1, 3, 1, 1],
+      [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+      [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+      [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+      [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     ];
 
     return Container(
       child: Column(
         children: <Widget>[
-          for (int i = 0; i < 6; i++)
+          for (int i = 0; i < _chairStatus.length; i++)
             Container(
               margin: EdgeInsets.only(top: i == 3 ? size.height * .02 : 0),
               child: Row(
                 children: <Widget>[
-                  for (int x = 0; x < 9; x++)
+                  for (int x = 0; x < _chairStatus[i].length; x++)
                     Expanded(
-                      flex: x == 0 || x == 8 ? 2 : 1,
+                      flex: x == 0 || x == 10 ? 2 : 1,
                       child: x == 0 ||
-                          x == 8 ||
+                          x == 10 ||
                           (i == 0 && x == 1) ||
                           (i == 0 && x == 7) ||
-                          (x == 4)
+                          (x == 5)
                           ? Container()
                           : Container(
-                        height: size.width / 11 - 10,
+                        height: 48,
+                        width: 48,
                         margin: EdgeInsets.all(5),
                         child: _chairStatus[i][x - 1] == 1
                             ? BuildChairs.availableChair()
@@ -75,39 +78,39 @@ class _SeatSelectorState extends State<SeatSelector> {
 
           //Movie white Screen starts
 
-          Positioned(
-            top: 48,
-            child: Stack(
-              alignment: Alignment.topCenter,
-              children: [
-                Container(
-                  height: 40,
-                  width: MediaQuery.of(context).size.width * 0.65,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.only(
-                        topRight: Radius.circular(50.0),
-                        topLeft: Radius.circular(50.0),
-                      ),
-                      gradient: LinearGradient(
-                        colors: [white, Colors.transparent],
-                        begin: Alignment.topCenter,
-                        end: Alignment.bottomCenter,
-                        stops: [0, 1],
-                      )),
-                ),
-                Container(
-                  height: 40,
-                  width: MediaQuery.of(context).size.width * 0.55,
-                  decoration: BoxDecoration(
-                      border: Border(
-                          top: BorderSide(
-                    width: 6.0,
-                    color: white,
-                  ))),
-                ),
-              ],
-            ),
-          ),
+          // Positioned(
+          //   top: 48,
+          //   child: Stack(
+          //     alignment: Alignment.topCenter,
+          //     children: [
+          //       Container(
+          //         height: 40,
+          //         width: MediaQuery.of(context).size.width * 0.65,
+          //         decoration: BoxDecoration(
+          //             borderRadius: BorderRadius.only(
+          //               topRight: Radius.circular(50.0),
+          //               topLeft: Radius.circular(50.0),
+          //             ),
+          //             gradient: LinearGradient(
+          //               colors: [white, Colors.transparent],
+          //               begin: Alignment.topCenter,
+          //               end: Alignment.bottomCenter,
+          //               stops: [0, 1],
+          //             )),
+          //       ),
+          //       Container(
+          //         height: 40,
+          //         width: MediaQuery.of(context).size.width * 0.55,
+          //         decoration: BoxDecoration(
+          //             border: Border(
+          //                 top: BorderSide(
+          //           width: 6.0,
+          //           color: white,
+          //         ))),
+          //       ),
+          //     ],
+          //   ),
+          // ),
 
           //Movie white Screen ends
 
@@ -123,8 +126,8 @@ class _SeatSelectorState extends State<SeatSelector> {
 class BuildChairs{
   static Widget selectedChair(){
     return Container(
-      height: 10.0,
-      width: 10.0,
+      height: 5.0,
+      width: 5.0,
       decoration: BoxDecoration(
         color: primary,
         borderRadius: BorderRadius.circular(6.0)
@@ -134,8 +137,8 @@ class BuildChairs{
 
   static Widget availableChair(){
     return Container(
-      height: 10.0,
-      width: 10.0,
+      height: 5.0,
+      width: 5.0,
       decoration: BoxDecoration(
           border: Border.all(color: white),
           borderRadius: BorderRadius.circular(6.0)
@@ -145,8 +148,8 @@ class BuildChairs{
 
   static Widget reservedChair(){
     return Container(
-      height: 10.0,
-      width: 10.0,
+      height: 5.0,
+      width: 5.0,
       decoration: BoxDecoration(
           color: white,
           borderRadius: BorderRadius.circular(6.0)

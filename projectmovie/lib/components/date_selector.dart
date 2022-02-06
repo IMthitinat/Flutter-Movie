@@ -56,10 +56,7 @@ class _DateSelectorState extends State<DateSelector> {
             Container(
               decoration: BoxDecoration(
                   color: white.withOpacity(0.1),
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(12),
-                    bottomLeft: Radius.circular(12),
-                  )),
+                 ),
             ),
             Container(
               width: size.width,
@@ -95,7 +92,7 @@ class _DateSelectorState extends State<DateSelector> {
                               date.day.toString(),
                               style: TextStyle(
                                   fontSize: 22,
-                                  fontWeight: FontWeight.w600,
+                                 
                                   height: 1.0,
                                   color: index == dateIndexSelected
                                       ? black
@@ -105,7 +102,7 @@ class _DateSelectorState extends State<DateSelector> {
                               _dayFormat(date.weekday),
                               style: TextStyle(
                                 fontSize: 16,
-                                fontWeight: FontWeight.w600,
+                        
                                 color: index == dateIndexSelected
                                     ? black
                                     : white.withOpacity(0.5),

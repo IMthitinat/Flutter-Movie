@@ -10,6 +10,7 @@ class TimeSelector extends StatefulWidget {
 }
 
 class _TimeSelectorState extends State<TimeSelector> {
+
   int timeIntexSelected = 0;
 
   var time = [
@@ -17,6 +18,8 @@ class _TimeSelectorState extends State<TimeSelector> {
     ["12.30", 10],
     ["15.30", 15],
     ["16.30", 20],
+    ["18.30", 25],
+    ["18.30", 25],
     ["18.30", 25],
   ];
 
