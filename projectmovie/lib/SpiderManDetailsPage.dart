@@ -25,7 +25,7 @@ class _SpiderManDetailState extends State<SpiderManDetail> {
             elevation: 0.0,
             leading: IconButton(
               icon: Icon(Icons.arrow_back_ios_new),
-              onPressed: () {},
+              onPressed: () { Navigator.pop(context);},
             ),
             actions: <Widget>[
               IconButton(
