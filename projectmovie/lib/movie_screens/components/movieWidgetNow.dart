@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:projectmovie/movie_data/movie_data.dart';
 import 'package:projectmovie/movie_inner_widget/movie_inner_widget.dart';
+import 'package:projectmovie/selectionPage.dart';
 
 class MovieWidgetNow extends StatefulWidget {
   // const MovieWidget({ Key? key }) : super(key: key);
@@ -46,7 +47,7 @@ class _MovieWidgetNowState extends State<MovieWidgetNow> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    
+
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 24),
       child: Column(
@@ -102,14 +103,22 @@ class _MovieWidgetNowState extends State<MovieWidgetNow> {
             decoration: BoxDecoration(
                 color: Colors.red, borderRadius: BorderRadius.circular(10.0)),
             child: Center(
+                child: TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const SelectionPage()),
+                );
+              },
               child: Text(
-                'DETAIL',
+                'Buy ticket',
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-            ),
+            )),
           ),
           SizedBox(
             height: size.height * 0.01,

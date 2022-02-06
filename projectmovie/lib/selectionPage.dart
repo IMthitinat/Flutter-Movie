@@ -15,8 +15,33 @@ class SelectionPage extends StatefulWidget {
 class _SelectionPageState extends State<SelectionPage> {
   @override
   Widget build(BuildContext context) {
+    var title ;
     return Scaffold(
         backgroundColor: Color(0xff000000),
+         appBar: AppBar(
+        backgroundColor: Color(0xFF212121),
+        elevation: 0,
+        actions: [
+          Icon(Icons.search, size: 30),
+          SizedBox(width: 10.0),
+          Icon(Icons.notifications_rounded, size: 30),
+          SizedBox(width: 15.0),
+          Container(
+            height: 40,
+            width: 40,
+            decoration: BoxDecoration(
+                color: Colors.black,
+                shape: BoxShape.circle,
+                image: DecorationImage(
+                    fit: BoxFit.contain,
+                    image: AssetImage('assets/images/movie.png'))),
+          ),
+          SizedBox(
+            width: 15.0,
+          ),
+        ],
+        // title: Text(widget.title),
+      ),
         body: Padding(
           padding: EdgeInsets.only(top: MediaQuery.of(context).padding.top),
           child: Column(
