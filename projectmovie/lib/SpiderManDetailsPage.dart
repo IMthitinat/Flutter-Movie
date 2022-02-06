@@ -14,6 +14,7 @@ class _SpiderManDetailState extends State<SpiderManDetail> {
   var rating = 4.5;
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Container(
       decoration: BoxDecoration(
           image: DecorationImage(
@@ -40,7 +41,7 @@ class _SpiderManDetailState extends State<SpiderManDetail> {
         body: new Container(
           alignment: Alignment.bottomCenter,
           margin: EdgeInsets.all(20),
-          height: 400,
+          height: size.height * 0.55,
           width: double.infinity,
           decoration: BoxDecoration(
             color: Colors.white,
@@ -132,10 +133,10 @@ class _SpiderManDetailState extends State<SpiderManDetail> {
                 ]),
                 Row(
                   children: [
-                    SizedBox(width: 40),
+                    SizedBox(width: size.width * 0.01),
                     new Container(
-                      height: 80.0,
-                      width: 80.0,
+                      height: size.height * 0.1,
+                      width: size.width * 0.2,
                       decoration: new BoxDecoration(
                         image: DecorationImage(
                             image: new AssetImage('assets/SpiderManDetails/tomholland.jpg'),
@@ -144,10 +145,10 @@ class _SpiderManDetailState extends State<SpiderManDetail> {
                         // shape: BoxShape.circle
                       ),
                     ),
-                    SizedBox(width: 20),
+                    SizedBox(width: size.width * 0.01),
                     new Container(
-                      height: 80.0,
-                      width: 80.0,
+                      height: size.height * 0.1,
+                      width: size.width * 0.2,
                       decoration: new BoxDecoration(
                         image: DecorationImage(
                             image: new AssetImage('assets/SpiderManDetails/zendaya.jpg'),
@@ -156,10 +157,10 @@ class _SpiderManDetailState extends State<SpiderManDetail> {
                         // shape: BoxShape.circle
                       ),
                     ),
-                    SizedBox(width: 20),
+                    SizedBox(width: size.width * 0.01),
                     new Container(
-                      height: 80.0,
-                      width: 80.0,
+                      height: size.height * 0.1,
+                      width: size.width * 0.2,
                       decoration: new BoxDecoration(
                         image: DecorationImage(
                             image: new AssetImage(
@@ -169,10 +170,10 @@ class _SpiderManDetailState extends State<SpiderManDetail> {
                         // shape: BoxShape.circle
                       ),
                     ),
-                    SizedBox(width: 20),
+                    SizedBox(width: size.width * 0.01),
                     new Container(
-                      height: 80.0,
-                      width: 80.0,
+                      height: size.height * 0.1,
+                      width: size.width * 0.2,
                       decoration: new BoxDecoration(
                         image: DecorationImage(
                             image: new AssetImage('assets/SpiderManDetails/JacobBatalon.jpg'),
@@ -186,7 +187,7 @@ class _SpiderManDetailState extends State<SpiderManDetail> {
                 Row(
                   children: [
                     SizedBox(
-                      width: 40,
+                      width: size.width * 0.04,
                     ),
                     new Container(
                       child: new Text(
@@ -196,12 +197,12 @@ class _SpiderManDetailState extends State<SpiderManDetail> {
                             // fontFamily: 'Aleo',
                             // fontStyle: FontStyle.normal,
                             fontWeight: FontWeight.bold,
-                            fontSize: 12.0,
+                            fontSize: 11.0,
                             color: Colors.black),
                       ),
                     ),
                     SizedBox(
-                      width: 45,
+                      width: size.width * 0.05,
                     ),
                     new Container(
                       child: new Text(
@@ -211,27 +212,27 @@ class _SpiderManDetailState extends State<SpiderManDetail> {
                             // fontFamily: 'Aleo',
                             // fontStyle: FontStyle.normal,
                             fontWeight: FontWeight.bold,
-                            fontSize: 12.0,
+                            fontSize: 11.0,
                             color: Colors.black),
                       ),
                     ),
                     SizedBox(
-                      width: 20,
+                      width: size.width * 0.1,
                     ),
                     new Container(
                       child: new Text(
-                        'Benedict Cumberbatch',
+                        'Benedict',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             // fontFamily: 'Aleo',
                             // fontStyle: FontStyle.normal,
                             fontWeight: FontWeight.bold,
-                            fontSize: 12.0,
+                            fontSize: 11.0,
                             color: Colors.black),
                       ),
                     ),
                     SizedBox(
-                      width: 5,
+                      width: size.width * 0.02,
                     ),
                     new Container(
                       child: new Text(
@@ -241,7 +242,7 @@ class _SpiderManDetailState extends State<SpiderManDetail> {
                             // fontFamily: 'Aleo',
                             // fontStyle: FontStyle.normal,
                             fontWeight: FontWeight.bold,
-                            fontSize: 12.0,
+                            fontSize: 11.0,
                             color: Colors.black),
                       ),
                     ),
